@@ -20,6 +20,7 @@ Then import the header file wherever you want to use **SortSegmentedControl**.
 
 ### Initialization
 ```objc
+
 //left SortSegmentedItem
 	SortSegmentedItem *leftItem = [SortSegmentedItem itemWithNormalStatusImage:normalStatus selectedStatus1Image:selectStatus1 selectedStatus2Image:selectStatus2];
     [leftItem setTitle:@"price" forState:UIControlStateNormal];
