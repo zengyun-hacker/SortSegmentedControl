@@ -1,5 +1,5 @@
 # SortSegmentedControl
----
+
 ## Overview
 
 `SortSegmentedControl` is a Segmented Control which can control the sort of list.
@@ -8,7 +8,7 @@
 ![SortSegmentedControl](./segment_image.png)
 
 ## Usage
----
+
 
 ### Installation
 Add `SortSegmentedControl`folder to your project.  
@@ -67,10 +67,10 @@ Then import the header file wherever you want to use **SortSegmentedControl**.
 }
 ```
 ## Requirments
----
+
 need ARC
 
 ## Contact
----
+
 Du  
 Email: zengyun.programmer@gmail.com
