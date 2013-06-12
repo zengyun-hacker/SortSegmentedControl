@@ -66,3 +66,11 @@ Then import the header file wherever you want to use **SortSegmentedControl**.
     NSLog(@"same item pressed, item tag : %ld , item status : %u",(long)item.tag,item.status);
 }
 ```
+## Requirments
+---
+need ARC
+
+## Contact
+---
+Du  
+Email: zengyun.programmer@gmail.com
