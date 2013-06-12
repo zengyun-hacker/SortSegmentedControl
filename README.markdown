@@ -1,28 +1,26 @@
-//
-//  ViewController.m
-//  SortSegmentedControl Example
-//
-//  Created by Du on 13-6-10.
-//  Copyright (c) 2013年 Du. All rights reserved.
-//
+# SortSegmentedControl
+---
+## Overview
 
-#import "ViewController.h"
+`SortSegmentedControl` is a Segmented Control which can control the sort of list.
+
+
+![SortSegmentedControl](./segment_image.png)
+
+## Usage
+---
+
+### Installation
+Add `SortSegmentedControl`folder to your project.  
+Then import the header file wherever you want to use **SortSegmentedControl**.  
+
+```
 #import "SortSegmentedControl.h"
+```
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    UIImage *normalStatus = [UIImage imageNamed:@"normal.png"];
-    UIImage *selectStatus1 = [UIImage imageNamed:@"ascending.png"];
-    UIImage *selectStatus2 = [UIImage imageNamed:@"descending.png"];
-    
-    //left SortSegmentedItem
+### Initialization
+```
+//left SortSegmentedItem
 	SortSegmentedItem *leftItem = [SortSegmentedItem itemWithNormalStatusImage:normalStatus selectedStatus1Image:selectStatus1 selectedStatus2Image:selectStatus2];
     [leftItem setTitle:@"price" forState:UIControlStateNormal];
     [leftItem setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
@@ -49,14 +47,11 @@
     segmentedControl.defaultSelectedItemIndex = 2;
     segmentedControl.delegate = self;
     [self.view addSubview:segmentedControl];
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+```
+### Implement the delegate
 
+```
 - (void)segmentedControlValueChanged:(SortSegmentedItem *)item{
     /**
      this method will be called when you tapped normal item
@@ -70,5 +65,4 @@
      */
     NSLog(@"same item pressed, item tag : %ld , item status : %u",(long)item.tag,item.status);
 }
-
-@end
+```

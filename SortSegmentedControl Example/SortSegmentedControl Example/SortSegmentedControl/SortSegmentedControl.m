@@ -2,8 +2,8 @@
 //  SortSegmentedControl.m
 //  SortSegmentedControl Example
 //
-//  Created by dreamer on 13-6-10.
-//  Copyright (c) 2013年 dreamer. All rights reserved.
+//  Created by Du on 13-6-10.
+//  Copyright (c) 2013年 Du. All rights reserved.
 //
 
 #import "SortSegmentedControl.h"
@@ -90,7 +90,7 @@
     if (tappedItem.selected) {
         tappedItem.status = (tappedItem.status == kascendingOrder) ? (tappedItem.status = kdescendingOrder):(tappedItem.status = kascendingOrder);
         [tappedItem updateItemImage];
-        [_delegate sameSegmentedItemTapped:tappedItem];
+        [_delegate selectedSegmentedItemTapped:tappedItem];
         return;
     }
     

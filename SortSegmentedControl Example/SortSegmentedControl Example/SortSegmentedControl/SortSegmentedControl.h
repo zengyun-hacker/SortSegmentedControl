@@ -3,7 +3,7 @@
 //  SortSegmentedControl Example
 //
 //  Created by Du on 13-6-10.
-//  Copyright (c) 2013年 dreamer. All rights reserved.
+//  Copyright (c) 2013年 Du. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -15,13 +15,13 @@
 @protocol SortSegmentControlDelegate <NSObject>
 
 /**
- segmentedControlValueChanged would be called when you tapped different item
+ segmentedControlValueChanged would be called when you tapped normal item
  */
 - (void)segmentedControlValueChanged:(SortSegmentedItem *)item;
 /**
- sameSegmentedItemTapped would be called when you tapped the same item
+ selectedSegmentedItemTapped would be called when you tapped the selected item
  */
-- (void)sameSegmentedItemTapped:(SortSegmentedItem *)item;
+- (void)selectedSegmentedItemTapped:(SortSegmentedItem *)item;
 
 @end
 

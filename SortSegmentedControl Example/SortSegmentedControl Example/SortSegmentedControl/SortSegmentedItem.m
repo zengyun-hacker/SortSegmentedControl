@@ -2,8 +2,8 @@
 //  SortSegmentItem.m
 //  SortSegmentedControl Example
 //
-//  Created by dreamer on 13-6-10.
-//  Copyright (c) 2013年 dreamer. All rights reserved.
+//  Created by Du on 13-6-10.
+//  Copyright (c) 2013年 Du. All rights reserved.
 //
 
 #import "SortSegmentedItem.h"
