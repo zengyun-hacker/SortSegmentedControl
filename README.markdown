@@ -22,32 +22,32 @@ Then import the header file wherever you want to use **SortSegmentedControl**.
 
 ```objc
 //left SortSegmentedItem
-	SortSegmentedItem *leftItem = [SortSegmentedItem itemWithNormalStatusImage:normalStatus selectedStatus1Image:selectStatus1 selectedStatus2Image:selectStatus2];
-    [leftItem setTitle:@"price" forState:UIControlStateNormal];
-    [leftItem setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    [leftItem setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 20)];
+SortSegmentedItem *leftItem = [SortSegmentedItem itemWithNormalStatusImage:normalStatus selectedStatus1Image:selectStatus1 selectedStatus2Image:selectStatus2];
+[leftItem setTitle:@"price" forState:UIControlStateNormal];
+[leftItem setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+[leftItem setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 20)];
     
-    //middle SortSegmentedItem
-    SortSegmentedItem *middleItem = [SortSegmentedItem itemWithNormalStatusImage:normalStatus selectedStatus1Image:selectStatus1 selectedStatus2Image:selectStatus2];
-    [middleItem setTitle:@"hot" forState:UIControlStateNormal];
-    [middleItem setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    [middleItem setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 20)];
-    //change default select status
-    middleItem.defaultSelectedStatus = kdescendingOrder;
-    
-    //right SortSegmentedItem
-    SortSegmentedItem *rightItem = [SortSegmentedItem itemWithNormalStatusImage:normalStatus selectedStatus1Image:selectStatus1 selectedStatus2Image:selectStatus2];
-    [rightItem setTitle:@"date" forState:UIControlStateNormal];
-    [rightItem setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    [rightItem setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 20)];
-    
-    
-    //init SortSegmentedControl var SortSementedItem
-    SortSegmentedControl *segmentedControl = [[SortSegmentedControl alloc] initWithItems:leftItem,middleItem,rightItem,nil];
-    //change default selected item
-    segmentedControl.defaultSelectedItemIndex = 2;
-    segmentedControl.delegate = self;
-    [self.view addSubview:segmentedControl];
+//middle SortSegmentedItem
+SortSegmentedItem *middleItem = [SortSegmentedItem itemWithNormalStatusImage:normalStatus selectedStatus1Image:selectStatus1 selectedStatus2Image:selectStatus2];
+[middleItem setTitle:@"hot" forState:UIControlStateNormal];
+[middleItem setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+[middleItem setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 20)];
+//change default select status
+middleItem.defaultSelectedStatus = kdescendingOrder;
+
+//right SortSegmentedItem
+SortSegmentedItem *rightItem = [SortSegmentedItem itemWithNormalStatusImage:normalStatus selectedStatus1Image:selectStatus1 selectedStatus2Image:selectStatus2];
+[rightItem setTitle:@"date" forState:UIControlStateNormal];
+[rightItem setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+[rightItem setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 20)];
+
+
+//init SortSegmentedControl var SortSementedItem
+SortSegmentedControl *segmentedControl = [[SortSegmentedControl alloc] initWithItems:leftItem,middleItem,rightItem,nil];
+//change default selected item
+segmentedControl.defaultSelectedItemIndex = 2;
+segmentedControl.delegate = self;
+[self.view addSubview:segmentedControl];
 
 ```
 ### Implement the delegate
