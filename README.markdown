@@ -14,12 +14,12 @@
 Add `SortSegmentedControl`folder to your project.  
 Then import the header file wherever you want to use **SortSegmentedControl**.  
 
-```
+```objc
 #import "SortSegmentedControl.h"
 ```
 
 ### Initialization
-```
+```objc
 //left SortSegmentedItem
 	SortSegmentedItem *leftItem = [SortSegmentedItem itemWithNormalStatusImage:normalStatus selectedStatus1Image:selectStatus1 selectedStatus2Image:selectStatus2];
     [leftItem setTitle:@"price" forState:UIControlStateNormal];
@@ -51,7 +51,7 @@ Then import the header file wherever you want to use **SortSegmentedControl**.
 ```
 ### Implement the delegate
 
-```
+```objc
 - (void)segmentedControlValueChanged:(SortSegmentedItem *)item{
     /**
      this method will be called when you tapped normal item
